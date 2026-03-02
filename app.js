@@ -1,3 +1,7 @@
+const params = new URLSearchParams(window.location.search);
+if (params.get("wallpaper") === "1") {
+  document.body.classList.add("wallpaper");
+}
 const grid = document.getElementById("grid");
 
 const today = new Date();
