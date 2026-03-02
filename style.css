@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(26, 1fr);
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+.past {
+  background: #555;
+  border-color: #555;
+}
+
+.today {
+  background: #fff;
+  border-color: #fff;
+}
+
+.text {
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  color: #888;
+}
